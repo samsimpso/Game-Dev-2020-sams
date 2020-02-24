@@ -47,7 +47,11 @@
 }
    else if(x!=0){document.getElementById('myDiv01').innerHTML += '<br>It is not a single digit number, input was '+ x
 }
-
+   if(x<=0){document.getElementById('myDiv01').innerHTML  += '<br>this is a negative number, input was below 0'
+}
+   if(x>=0){document.getElementById('myDiv01').innerHTML += '<br>This is a positive number, input was above 0'
+}
+   
 }">
 
 <div id="myDiv01">   </div>
