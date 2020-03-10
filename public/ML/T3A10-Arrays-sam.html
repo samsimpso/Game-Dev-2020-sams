@@ -1,7 +1,7 @@
 
 <script>
 let myArray = new Array(20) 
-myArray[0, 1, 2, 3] 
+myArray[0]='Sam' 
 
 </script>
 
@@ -12,17 +12,15 @@ myArray[0, 1, 2, 3]
 <input id="myText03" type=text value="fred"><br>
 
 <input type="button" value="Array set" onclick="{
-  document.getElementById('myDiv01').innerHTML = '<br>myText01 = '+
-   document.getElementById('myText01').value
+  document.getElementById('myDiv01').innerHTML = '<font color=red><b>myArray[0]</b></font>=' + myArray[0]
    
 }">
 
 <input type="button" value="Array show " onclick="{
  document.getElementById('myDiv01').innerHTML = 
-  '<br>myArray[1]=' + document.getElementById('myText01').value,
-+ '<br>myArray[2]=' + document.getElementById('myText02').value,
-+ '<br>myArray[3]=' + document.getElementById('myText03').value
-}
+
+'<font color=red>myArray[1]=</font>' + document.getElementById('myText01').value + '<font color=green><br>myArray[2]=</font>' + document.getElementById('myText02').value + '<font color=blue><br>myArray[3]=</font>' + document.getElementById('myText03').value
+}">
  
-}"><br>
+<br>
 <div id="myDiv01">...</div>
